@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, Plus, User, LogOut, Menu, X } from "lucide-react";
+import { Hourglass, Plus, User, LogOut, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ const Navbar = ({ isLoggedIn = false, userName = "User" }: NavbarProps) => {
 
   const navLinks = isLoggedIn
     ? [
-        { path: "/dashboard", label: "Dashboard", icon: Clock },
+        { path: "/dashboard", label: "Dashboard", icon: Hourglass },
         { path: "/create", label: "Create Capsule", icon: Plus },
       ]
     : [];
@@ -37,7 +37,7 @@ const Navbar = ({ isLoggedIn = false, userName = "User" }: NavbarProps) => {
               transition={{ duration: 0.5 }}
               className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center shadow-glow"
             >
-              <Clock className="w-5 h-5 text-primary-foreground" />
+              <Hourglass className="w-5 h-5 text-primary-foreground" />
             </motion.div>
             <span className="font-heading font-semibold text-lg gradient-text hidden sm:block">
               Time Capsule

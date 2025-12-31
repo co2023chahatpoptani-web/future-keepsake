@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, Heart, Lock, Sparkles, Calendar, Gift, ArrowRight } from "lucide-react";
+import { Hourglass, Heart, Lock, Sparkles, Calendar, Gift, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
@@ -28,7 +28,7 @@ const Index = () => {
   ];
 
   const floatingElements = [
-    { icon: Clock, delay: 0, x: "10%", y: "20%" },
+    { icon: Hourglass, delay: 0, x: "10%", y: "20%" },
     { icon: Heart, delay: 0.5, x: "85%", y: "15%" },
     { icon: Calendar, delay: 1, x: "75%", y: "70%" },
     { icon: Sparkles, delay: 1.5, x: "15%", y: "75%" },
@@ -76,7 +76,7 @@ const Index = () => {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8"
             >
-              <Clock className="w-4 h-4 text-primary" />
+              <Hourglass className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">Preserve your precious moments</span>
             </motion.div>
 
@@ -224,7 +224,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
-              <Clock className="w-4 h-4 text-primary-foreground" />
+              <Hourglass className="w-4 h-4 text-primary-foreground" />
             </div>
             <span className="font-heading font-semibold gradient-text">Time Capsule</span>
           </div>
