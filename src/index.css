@@ -125,13 +125,38 @@
   }
 
   .capsule-locked {
-    @apply border-2 border-locked/30 bg-muted/30;
-  }
+  background: linear-gradient(
+    180deg,
+    #0f1b2d,   /* deep dark blue */
+    #0a1323
+  );
+  border: 2px solid rgba(100, 130, 180, 0.25);
+  border-radius: 20px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05), /* subtle metallic edge */
+    0 12px 36px rgba(0, 0, 0, 0.7);         /* depth */
+}
+
 
   .capsule-unlocked {
-    @apply border-2 border-unlocked/50;
-    background: linear-gradient(145deg, hsl(160 40% 25% / 0.3), hsl(45 60% 30% / 0.15));
-  }
+  background: linear-gradient(
+    180deg,
+    #1c1538,
+    #120c2b
+  );
+  border: 2px solid rgba(170, 140, 255, 0.35);
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 32px rgba(170, 140, 255, 0.55), /* purple glow */
+    0 14px 48px rgba(0, 0, 0, 0.7);     /* depth */
+}
+
+
+
+
+
 }
 
 @layer utilities {

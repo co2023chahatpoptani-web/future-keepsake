@@ -18,13 +18,13 @@ const Index = () => {
       icon: Lock,
       title: "Lock Until the Future",
       description: "Choose when your capsule unlocks — tomorrow, next year, or decades from now.",
-      color: "from-gold to-gold-glow",
+      color: "from-accent-mint to-unlocked",
     },
     {
       icon: Sparkles,
       title: "Relive the Memory",
       description: "When the time comes, unlock your capsule and experience the magic of your past self.",
-      color: "from-accent-mint to-unlocked",
+      color: " from-gold to-gold-glow",
     },
   ];
 
@@ -174,7 +174,7 @@ const Index = () => {
                       {index + 1}
                     </div>
 
-                    {/* Icon */}
+                    {/* Icon gift  */}
                     <div className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                       <feature.icon className="w-8 h-8 text-primary-foreground" />
                     </div>
