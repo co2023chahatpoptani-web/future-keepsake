@@ -111,8 +111,13 @@
   }
 
   .glass-nav {
-    @apply bg-card/90 backdrop-blur-lg border-b border-primary/10;
-    box-shadow: var(--shadow-soft);
+    @apply bg-card/80 backdrop-blur-xl;
+    border-bottom: 2px solid transparent;
+    background-image: linear-gradient(hsl(var(--card) / 0.85), hsl(var(--card) / 0.85)), 
+                      linear-gradient(90deg, hsl(var(--primary) / 0.4), hsl(var(--gold) / 0.4), hsl(var(--accent-mint) / 0.4), hsl(var(--primary) / 0.4));
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: var(--shadow-soft), 0 4px 30px -10px hsl(var(--primary) / 0.15);
   }
 
   .gradient-text {
